@@ -1,24 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Landing Page</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welco - Track your dog in real-time</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<header class="landing-header">
-		<div class="header-logo">
-			<img src="images/logo.png" alt="Logo">
-		</div>
-		<nav class="header-nav">
-			<ul>
-				<li><a href="#features">Features</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-		<a href="#signup" class="header-cta">Get Started</a>
-	</header>
+  <!-- Header -->
+  <header>
+    <div class="logo">Welco</div>
+
+    <nav class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="auth-buttons">
+      <button class="btn btn-login">Log in</button>
+      <button class="btn btn-signup">Sign up</button>
+    </div>
+
+    <div class="menu-icon" id="menu-icon">
+      ☰
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Track your dog in<br>real-time</h1>
+      <p>Simple and intuitive design</p>
+      <button class="btn-cta">Try for free</button>
+    </div>
+    <div class="hero-image">
+      <img src="header.png" alt="Woman tracking her dog illustration" />
+    </div>
+  </section>
+
+  <script>
+    // Toggle mobile menu
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('nav-links');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuIcon.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
