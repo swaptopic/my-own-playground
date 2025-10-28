@@ -1,0 +1,61 @@
+/* Landing Page Header Styles */
+.landing-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 32px 48px 0 48px;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.header-logo img {
+	height: 48px;
+}
+.header-nav ul {
+	display: flex;
+	gap: 32px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.header-nav a {
+	text-decoration: none;
+	color: #222;
+	font-weight: 500;
+	font-size: 1.1rem;
+	transition: color 0.2s;
+}
+.header-nav a:hover {
+	color: #0078ff;
+}
+.header-cta {
+	background: linear-gradient(90deg, #0078ff 0%, #00c6ff 100%);
+	color: #fff;
+	padding: 12px 32px;
+	border-radius: 24px;
+	font-weight: 600;
+	text-decoration: none;
+	box-shadow: 0 2px 8px rgba(0,120,255,0.08);
+	transition: background 0.2s, box-shadow 0.2s;
+}
+.header-cta:hover {
+	background: linear-gradient(90deg, #005bb5 0%, #0099cc 100%);
+	box-shadow: 0 4px 16px rgba(0,120,255,0.12);
+}
+@media (max-width: 768px) {
+	.landing-header {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 24px 16px 0 16px;
+	}
+	.header-nav ul {
+		gap: 16px;
+	}
+	.header-logo img {
+		height: 36px;
+	}
+	.header-cta {
+		margin-top: 16px;
+		width: 100%;
+		text-align: center;
+	}
+}
